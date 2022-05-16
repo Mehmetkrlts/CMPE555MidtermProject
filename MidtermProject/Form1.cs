@@ -330,6 +330,17 @@ namespace MidtermProject
         {
             InitializeComponent();
 
+            questionLabel.BackColor = Color.FromArgb(34, 26, 53);
+            questionLabel.ForeColor = Color.FromArgb(255, 215, 94);
+            answerA.BackColor = Color.FromArgb(34, 26, 53);
+            answerA.ForeColor = Color.FromArgb(255, 215, 94);
+            answerB.BackColor = Color.FromArgb(34, 26, 53);
+            answerB.ForeColor = Color.FromArgb(255, 215, 94);
+            answerC.BackColor = Color.FromArgb(34, 26, 53);
+            answerC.ForeColor = Color.FromArgb(255, 215, 94);
+            answerD.BackColor = Color.FromArgb(34, 26, 53);
+            answerD.ForeColor = Color.FromArgb(255, 215, 94);
+
             questions = populateData();
             questionId = random.Next(questions.Count);
             questionLabel.Text = questions.ElementAt(questionId).Desc;
@@ -397,6 +408,11 @@ namespace MidtermProject
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void questionLabel_Click(object sender, EventArgs e)
         {
 
         }

@@ -87,6 +87,7 @@
             this.questionLabel.Size = new System.Drawing.Size(444, 56);
             this.questionLabel.TabIndex = 4;
             this.questionLabel.Text = "1-Which Disney character famously leaves a glass slipper behind at a royal ball?";
+            this.questionLabel.Click += new System.EventHandler(this.questionLabel_Click);
             // 
             // Answer
             // 
